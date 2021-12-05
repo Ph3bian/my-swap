@@ -1,0 +1,18 @@
+.Chips {
+  border: 1px solid var(--border-color-base);
+  border-radius: var(--border-radius-10);
+  display: flex;
+  padding: 0.4rem 0.75rem;
+  -webkit-box-align: center;
+  align-items: center;
+  margin-top: 0.5rem;
+  font-size: var(--font-size-13);
+  &.error {
+    color: var(--color-red-base);
+    border: 1px solid var(--color-red-light);
+  }
+  &.success {
+    color: var(--color-green-base);
+    border: 1px solid var(--color-green-light);
+  }
+}

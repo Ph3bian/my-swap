@@ -1,0 +1,15 @@
+.ListGroup {
+  margin: 0;
+  padding: 0;
+  &Item {
+    list-style: none;
+    padding: 8px 20px;
+    margin-bottom: 16px;
+    &:hover {
+      background: var(--border-color-base);
+    }
+    &hasEvent {
+      cursor: pointer;
+    }
+  }
+}

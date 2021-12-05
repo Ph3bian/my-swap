@@ -1,0 +1,45 @@
+@import "../../styles/breakpoints";
+.Home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  &Title {
+    padding-bottom: 0.75rem;
+    font-size: var(--font-size-18);
+  }
+  &Button {
+    margin-top: 0.5rem;
+  }
+  form {
+    @include sm {
+      width: 400px;
+    }
+    max-width: 400px;
+  }
+  &Fields {
+    display: block;
+    input[type="number"] {
+      max-width: 180px;
+    }
+  }
+  &Address {
+    word-break: break-all;
+    line-height: 24px;
+    margin-bottom: 1rem;
+    border-color: var(--color-primary);
+    span {
+      color: var(--text-color-primary);
+      font-size: 0.9rem;
+      &::before {
+        content: "";
+        width: 0.5rem;
+        height: 0.5rem;
+        display: inline-block;
+        margin-right: 0.35rem;
+        border-radius: 50%;
+        background-color: var(--text-color-primary);
+      }
+    }
+  }
+}

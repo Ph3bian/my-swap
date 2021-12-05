@@ -1,0 +1,25 @@
+.Card {
+  border-radius: var(--border-radius-10);
+  margin-top: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  padding: 1rem;
+  width: 100%;
+  background: var(--color-white);
+  color: var(--text-color-base);
+
+  &Item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: var(--font-size-16);
+    &.inputGroup {
+      border-radius: var(--border-radius-10);
+      border: 1px solid var(--border-color-base);
+      background-color: var(--color-grey);
+      width: initial;
+      padding: 1rem;
+    }
+  }
+}

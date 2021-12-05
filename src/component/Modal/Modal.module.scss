@@ -1,0 +1,55 @@
+.Modal {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.75);
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn .8s;
+  &Content {
+    background-color: var(--color-bg);
+    max-width: 440px;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+
+    %dflex {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .header {
+      @extend %dflex;
+      padding: 1rem 0.875rem;
+      h3 {
+        margin: 0;
+        font-weight: 400;
+      }
+      position: sticky;
+      top: 0;
+      z-index: 1;
+    }
+    .body {
+      overflow-y: auto;
+      max-height: 440px;
+    }
+    .footer {
+      @extend %dflex;
+    }
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

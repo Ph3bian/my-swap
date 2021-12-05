@@ -1,0 +1,57 @@
+@import "../../styles/breakpoints";
+
+.Container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  small {
+    font-size: var(--font-size-13);
+  }
+  .error {
+    color: var(--color-red-base);
+    height: 13px;
+  }
+}
+
+label {
+  margin-bottom: 0.5rem;
+  display: inline-block;
+  font-size: var(--font-size-12);
+}
+.Input {
+  color: var(--text-color-base);
+  position: relative;
+  font-weight: 500;
+  background-color: var(--color-grey);
+  white-space: nowrap;
+  font-family: "Roboto Mono", monospace;
+
+  text-overflow: ellipsis;
+  padding: 0.8rem;
+  -moz-appearance: textfield;
+
+  &.search {
+    width: 100%;
+    border-radius: 6px;
+    border: 1px solid var(--border-color-base);
+  }
+
+  &[type="number"] {
+    flex: 1 1 auto;
+    outline: none;
+    border: none;
+    text-align: right;
+    font-size: 1rem;
+
+    @include md {
+      font-size: 1.5rem;
+    }
+    padding: 0px;
+  }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

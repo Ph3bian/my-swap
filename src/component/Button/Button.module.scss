@@ -1,0 +1,27 @@
+.Button {
+  cursor: pointer;
+  font-size: var(--font-size-13);
+  font-weight: var(--font-weight-500);
+  font-family: inherit;
+  padding: 0.5rem;
+  height: 50px;
+  border-radius: var(--border-radius-10);
+  outline: none;
+  border: 1px solid transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &.isFullWidth {
+    width: 100%;
+  }
+  &:disabled {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+}
+
+.primary {
+  color: var(--text-color-primary);
+  background: var(--color-primary);
+}
